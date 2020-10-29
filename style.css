@@ -175,8 +175,8 @@ html
 
 footer{
 	background: #885edb;
-	padding: .5rem;
-	position: absolute;
+	padding: 1rem;
+	position: static;
 	width: 100%;
 	bottom: 0;
 }
@@ -203,6 +203,10 @@ footer p{
 	#toggle:checked + .navbar{
 		display : flex;
 	}
+
+/*	#toggle:checked + footer{
+		bottom: -8;
+	}*/
 	.navbar .options{
 		flex-direction : column;
 		width:100%;
