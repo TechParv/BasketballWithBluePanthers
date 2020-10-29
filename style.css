@@ -1,0 +1,231 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Grandstander', cursive;
+}
+html
+{
+	font-size: 62.5%;
+}
+
+/*Navbar area */
+
+.navbar{
+	background: #6D6a6a;
+	display: flex;
+	border-bottom: 1px solid #6D6a6a;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.navbar .options{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.5rem;
+
+}
+
+.navbar .img{
+	display: flex;
+	align-items: center;
+	margin: 0.4rem;
+}
+.navbar .img .logotxt a{
+	color : cyan;
+	padding-top: .5rem;
+	text-decoration: none;
+	font-size: 2.5rem;
+
+}
+
+
+.navbar .img img{
+	height: 4rem;
+	margin: .5rem;
+
+}
+
+.navbar .options a{
+	color : white;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform : uppercase;
+	padding: 1rem 2.8rem;
+	position: relative;
+
+
+}
+
+
+.navbar .options a:before{
+	content: "";
+	position: absolute;
+	left:0;
+	bottom: 0;
+	width: 0%;
+	height: 0.2rem;
+	background:  #08915c;
+	transition: all .7s linear;
+}
+
+.navbar .options a:hover{
+	color:  #0adb8b;
+}
+
+.navbar .options a:hover:before{
+	width: 100%;
+	background: cyan;
+}
+
+#toggle{
+	display: none;
+}
+
+.togglearea{
+	background: #6D6a6a;
+	border-bottom: .2rem solid white;
+	color : white;
+	padding: 0rem 1rem;
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.togglearea .logo{
+	display: flex;
+	align-items: center;
+	margin: .4rem;
+
+}
+.togglearea .logo img{
+	height: 4rem;
+	margin: .5rem;
+
+}
+
+.togglearea .logo .logo-txt a{
+	color : cyan;
+	text-decoration: none;
+	font-size: 2.5rem;
+}
+.togglearea label{
+	background: cyan;
+	height: 4rem;
+	width : 4rem;
+	color : black;
+	border-radius: .5rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction : column;
+}
+
+.togglearea label span{
+	background : black;
+	height: .4rem;
+	width: 70%;
+	margin : .3rem;
+
+}
+
+.current{
+	color: cyan!important;
+}
+
+
+/*navbar area*/
+
+
+.container{
+	background: cyan;
+	width: 80vw;
+	height: 70vh;
+	margin: 10vh 11vw;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 85% 100%, 0 100%);
+	margin-bottom: 2rem;
+}
+
+.container h1{
+	color: yellow;
+	text-align: center;
+	text-decoration: underline;
+	background: brown;
+	padding: .8rem;
+	font-size: 4rem;
+	border-radius:79% 21% 78% 22% / 0% 73% 27% 100% ;
+
+}
+
+.container p{
+	font-size: 3rem;
+	padding: 4rem;
+	word-spacing: 2.5rem;
+	line-height: 4rem;
+}
+
+.container p span{
+	float: right;
+	color: #6D6a6a;
+
+}
+
+
+footer{
+	background: #885edb;
+	padding: .5rem;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+footer p{
+	font-size: 3rem;
+	color: #6be39a;
+	text-align: center;
+}
+
+
+@media screen and (max-width :1004px) {
+	.container p{
+		word-spacing:.5rem;
+	}
+}
+
+
+
+@media screen and (max-width :810px) {
+	.navbar{
+		flex-direction: column;
+		display: none;
+	}
+	#toggle:checked + .navbar{
+		display : flex;
+	}
+	.navbar .options{
+		flex-direction : column;
+		width:100%;
+	}
+
+	.navbar .img{
+		display: none;
+	}
+
+	.togglearea{
+		display: flex;
+
+	}
+	html{
+		font-size: 50%;
+	}
+	.container{
+		overflow: scroll;
+	}
+}
+
+@media screen and (max-width: 250px){
+	html{
+		font-size: 40%;
+	}
+}
