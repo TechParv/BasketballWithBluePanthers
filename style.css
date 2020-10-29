@@ -145,7 +145,6 @@ html
 	height: 70vh;
 	margin: 10vh 11vw;
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 85% 100%, 0 100%);
-	margin-bottom: 2rem;
 }
 
 .container h1{
@@ -175,7 +174,7 @@ html
 
 footer{
 	background: #885edb;
-	padding: 1rem;
+	padding: 2rem;
 	position: static;
 	width: 100%;
 	bottom: 0;
@@ -204,9 +203,6 @@ footer p{
 		display : flex;
 	}
 
-/*	#toggle:checked + footer{
-		bottom: -8;
-	}*/
 	.navbar .options{
 		flex-direction : column;
 		width:100%;
@@ -231,5 +227,8 @@ footer p{
 @media screen and (max-width: 250px){
 	html{
 		font-size: 40%;
+	}
+	footer{
+		padding:1rem;
 	}
 }
