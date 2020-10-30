@@ -14,6 +14,7 @@ html
 	background: rgba(250 , 199 , 50 , .8);
 }
 
+
 /*Navbar area */
 
 .navbar{
@@ -145,7 +146,7 @@ html
 
 
 .container{
-	background: cyan;
+	background: rgba(249, 87, 6 , .8);
 	width: 80vw;
 	height: 70vh;
 	margin: 10vh 11vw;
@@ -153,10 +154,11 @@ html
 }
 
 .container h1{
-	color: yellow;
+	color: brown;
+	border: .1rem solid grey;
 	text-align: center;
 	text-decoration: underline;
-	background: brown;
+	background: #83E52B;
 	padding: .8rem;
 	font-size: 4rem;
 	border-radius:79% 21% 78% 22% / 0% 73% 27% 100% ;
@@ -203,7 +205,7 @@ footer p a{
 
 
 
-@media screen and (max-width :794px) {
+@media screen and (max-width :810px) {
 	.navbar{
 		flex-direction: column;
 		display: none;
@@ -237,7 +239,7 @@ footer p a{
 	}
 }
 
-@media screen and (max-width: 307px){
+@media screen and (max-width: 250px){
 	html{
 		font-size: 40%;
 	}
