@@ -7,6 +7,7 @@
 html
 {
 	font-size: 62.5%;
+	background: #ecf0f1;
 }
 
 ::selection{
@@ -116,25 +117,15 @@ html
 	text-decoration: none;
 	font-size: 2.5rem;
 }
+
 .togglearea label{
-	background: cyan;
-	height: 4rem;
-	width : 4rem;
-	color : black;
-	border-radius: .5rem;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction : column;
+	border: .2rem solid #000;
+	padding: .4rem 1rem;
+	border-radius: 5px;
 }
-
-.togglearea label span{
-	background : black;
-	height: .4rem;
-	width: 70%;
-	margin : .3rem;
-
+.togglearea label i{
+	font-size: 3rem;
+	color: #000;
 }
 
 .current{
@@ -146,7 +137,9 @@ html
 
 
 .container{
-	background: rgba(249, 87, 6 , .8);
+	background: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url('../contact_wall.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	width: 80vw;
 	height: 70vh;
 	margin: 10vh 11vw;
@@ -170,16 +163,35 @@ html
 	padding: 4rem;
 	word-spacing: 2.5rem;
 	line-height: 4rem;
+	color: #D3D3D3;
+}
+.container p{
+	text-align: center;
 }
 
-.container p span{
-	float: right;
-	color: #6D6a6a;
+.container p span a i{
+	color: #EA4335;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 50px;
+	transition: all .1s linear;
+	align-items: center;
+	margin: 1rem 0;
 
 }
 
+.container p span a i:hover{
+	transform: scale(1.1);
+}
+.container p span a i:hover:after{
+	content: 'techparv25@gmail.com';
+	padding: 1rem;
+	font-size: 80%;
+	font-family: 'Grandstander', cursive;
+}
 
-footer{
+/*footer{
 	background: #885edb;
 	padding: 2rem;
 	position: static;
@@ -195,7 +207,7 @@ footer p a{
 	text-decoration: none;
 	color: #6be39a;
 }
-
+*/
 
 @media screen and (max-width :1004px) {
 	.container p{
@@ -238,12 +250,20 @@ footer p a{
 		font-size: 1.8rem;
 	}
 }
+@media screen and (max-width: 513px){
+	.container p span a i:hover:after{
 
+		content: none;
+
+	}
+}
 @media screen and (max-width: 250px){
 	html{
 		font-size: 40%;
 	}
+
+	/*
 	footer{
 		padding:1rem;
-	}
+	}*/
 }

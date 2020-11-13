@@ -7,11 +7,12 @@
 html
 {
 	font-size: 62.5%;
+	background: #ecf0f1;
 }
 
 ::selection{
 	color: #3F4244;
-	background: rgba(250 , 199 , 50 , .8);
+	background: rgba(46, 204, 113,1.0);
 }
 
 /*Navbar area */
@@ -19,7 +20,7 @@ html
 .navbar{
 	background: #6D6a6a;
 	display: flex;
-	border-bottom: 1px solid #6D6a6a;
+	border-bottom: 1px solid #ecf0f1;
 	justify-content: space-between;
 	align-items: center;
 
@@ -115,25 +116,15 @@ html
 	text-decoration: none;
 	font-size: 2.5rem;
 }
+
 .togglearea label{
-	background: cyan;
-	height: 4rem;
-	width : 4rem;
-	color : black;
-	border-radius: .5rem;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction : column;
+	border: .2rem solid #000;
+	padding: .4rem 1rem;
+	border-radius: 5px;
 }
-
-.togglearea label span{
-	background : black;
-	height: .4rem;
-	width: 70%;
-	margin : .3rem;
-
+.togglearea label i{
+	font-size: 3rem;
+	color: #000;
 }
 
 .current{
@@ -145,7 +136,9 @@ html
 
 
 .container{
-	background: cyan;
+	background: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url('basket_wall.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	width: 80vw;
 	height: 70vh;
 	margin: 10vh 11vw;
@@ -168,15 +161,16 @@ html
 	padding: 4rem;
 	word-spacing: 2.5rem;
 	line-height: 4rem;
+	color: #D3D3D3;
 }
 
 .container p span{
 	float: right;
-	color: #6D6a6a;
+	color: #F3BFBF;
 
 }
 
-
+/*
 footer{
 	background: #885edb;
 	padding: 2rem;
@@ -194,7 +188,7 @@ footer p a{
 	color: #6be39a;
 }
 
-
+*/
 @media screen and (max-width :1004px) {
 	.container p{
 		word-spacing:.5rem;
@@ -241,7 +235,7 @@ footer p a{
 	html{
 		font-size: 40%;
 	}
-	footer{
+/*	footer{
 		padding:1rem;
-	}
+	}*/
 }
